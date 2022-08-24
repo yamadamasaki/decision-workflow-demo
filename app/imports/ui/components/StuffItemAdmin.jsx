@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
-const StuffItemAdmin = ({ stuff }) => (
-  <tr>
-    <td>{stuff.name}</td>
-    <td>{stuff.quantity}</td>
-    <td>{stuff.condition}</td>
-    <td>{stuff.owner}</td>
-  </tr>
-);
+const StuffItemAdmin = ({stuff}) => (
+    <tr>
+      <td>{stuff.name}</td>
+      <td>{stuff.quantity}</td>
+      <td>{stuff.condition}</td>
+      <td>{stuff.owner}</td>
+    </tr>
+)
 
 // Require a document to be passed to this component.
 StuffItemAdmin.propTypes = {
@@ -20,6 +20,6 @@ StuffItemAdmin.propTypes = {
     _id: PropTypes.string,
     owner: PropTypes.string,
   }).isRequired,
-};
+}
 
-export default StuffItemAdmin;
+export default StuffItemAdmin
