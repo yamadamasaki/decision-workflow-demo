@@ -3,12 +3,12 @@ import JSONSchemaBridge from 'uniforms-bridge-json-schema'
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
 import {AutoForm} from 'uniforms-bootstrap5'
-import 新規契約 from '../schemata/新規契約'
+import schemata from '../schemata'
 
 const ajv = new Ajv({allErrors: true, useDefaults: true})
 addFormats(ajv)
 
-const schema = 新規契約
+const schema = schemata.新規契約
 
 const createValidator = schema => {
   const validator = ajv.compile(schema)
